@@ -1,0 +1,23 @@
+.home-page {
+
+}
+
+.home-page__photo {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.home-page__intro {
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.home-page__outro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & > .columns {
+    margin-bottom: 2rem;
+  }
+}

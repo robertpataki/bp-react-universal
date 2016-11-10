@@ -1,0 +1,67 @@
+/*
+ * Blocks
+ * ======================================================================== */
+.menu {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @util clearfix;
+
+  li > a {
+    padding: $page-margin;
+  }
+}
+
+
+
+/*
+ * Elements
+ * ======================================================================== */
+.menu__item {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.menu__link {
+  display: block;
+  position: relative;
+  padding: $page-margin;
+  text-decoration: none;
+  cursor: pointer;
+  background: $col-header-bg;
+  color: $col-white;
+  @include no-tap-highlight;
+  @include link-hover-anim;
+
+  &,
+  &:active,
+  &:visited {
+    color: $col-white;
+  }
+
+  &:not(.menu__link--disabled){
+    &:hover {
+      background: darken($col-link-special, 10%);
+    }
+  }
+}
+
+
+
+/*
+ * Modifiers
+ * ======================================================================== */
+.menu__link--special {
+  background: $col-link-special;
+}
+
+.menu__link--disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.menu__link--active {
+  font-weight: 700;
+}

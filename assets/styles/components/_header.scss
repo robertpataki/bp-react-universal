@@ -1,0 +1,30 @@
+.header {
+  background: $col-header-bg;
+  user-select: none;
+  @util clearfix;
+
+  nav {
+    @util clearfix;
+  }
+
+  .menu {
+    float: right;
+    line-height: 1;
+  }
+}
+
+.header__branding {
+  float: left;
+  padding: 1.32rem $page-margin;
+  @util clearfix;
+
+  @include link-hover-anim;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    position: relative;
+  }
+}
