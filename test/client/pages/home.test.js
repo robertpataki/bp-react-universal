@@ -1,10 +1,10 @@
 import React from 'react';
-import {shallow, render} from 'enzyme';
+import {shallow} from 'enzyme';
 import expect from 'expect';
 
 import Home from '../../../code/client/pages/home';
 
-const { describe, it, beforeEach, console } = global;
+const { describe, it } = global;
 
 describe('Home page', () => {
   it('renders without exploding', () => {

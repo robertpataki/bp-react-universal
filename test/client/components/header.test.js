@@ -4,7 +4,7 @@ import {shallow} from 'enzyme';
 
 import Header from '../../../code/client/components/header';
 
-const { describe, it, beforeEach } = global;
+const { describe, it } = global;
 
 describe('Header component', () => {
   const wrapper = shallow(<Header />);
