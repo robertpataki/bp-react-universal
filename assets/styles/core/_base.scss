@@ -22,10 +22,7 @@ body, html {
 	}
 }
 
-a:link,
-a:hover,
-a:active,
-a:visited {
+a {
 	text-decoration: none;
 	outline: none;
 	color: inherit;

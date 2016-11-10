@@ -8,14 +8,18 @@ export default class Not_found extends Component
 	{
 		const markup =
 		(
-			<section className="l-content">
+			<section className="l-content not-found-page">
 				{title("Page not found")}
 
-				<div className="row">
-					<div className="small-centered small-11 medium-6 large-4">
+				<div className="grid">
+					<div className="column column-heavy">
 						<h1 className="heading">404 - Page not found</h1>
+					</div>
+				</div>
 
-						<Link to="/">Go to the Home page</Link>
+				<div className="grid">
+					<div className="column ta-center">
+						<Link to="/" className="link">Go to the Home page</Link>
 					</div>
 				</div>
 			</section>

@@ -15,7 +15,7 @@
 
 .header__branding {
   float: left;
-  padding: 1.32rem $page-margin;
+  padding: 1.32rem $page-margin 0 $page-margin;
   @util clearfix;
 
   @include link-hover-anim;

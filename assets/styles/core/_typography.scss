@@ -1,6 +1,11 @@
 .heading {
   font-size: 2rem;
-  margin-top: 3rem;
   text-align: center;
   font-weight: 700;
+}
+
+.link {
+  color: $col-link;
+
+  @include link-hover-anim;
 }

@@ -1,9 +1,7 @@
 /*
- * Foundation
+ * Vendor imports
  * ======================================================================== */
-@import 'core/foundation-settings';
-@import 'foundation-sites/scss/foundation';
-@include foundation-everything;
+ @import 'cutestrap';
 
 /*
  * Core imports
@@ -20,4 +18,4 @@
  * ======================================================================== */
 @import 'components/header';
 @import 'components/menu';
-@import 'components/home';
+@import 'pages/home';

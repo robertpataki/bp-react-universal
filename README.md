@@ -59,7 +59,7 @@ Check this article to see how you can install yarn: [https://yarnpkg.com/en/docs
 - Isomorphic (universal) rendering
 - Webpack
 - Development mode: hot reload for React components, hot reload for Redux reducers
-- SASS and Foundation
+- SASS and [CuteStrap](https://www.cutestrap.com/#)
 
 
 
