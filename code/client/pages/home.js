@@ -21,13 +21,13 @@ export default class Page extends Component
 					</div>
 				</div>
 
-				<div className="grid home-page__intro">
-					<div className="column">Appropriately administrate quality experiences through frictionless processes. Rapidiously enhance cross-media leadership skills for market positioning information. Efficiently foster functional processes after innovative applications. Assertively reinvent.</div>
+				<div className="grid grid--large">
+					<div className="column"><p className="fw-bold">Appropriately administrate quality experiences through frictionless processes. Rapidiously enhance cross-media leadership skills for market positioning information. Efficiently foster functional processes after innovative applications. Assertively reinvent.</p></div>
 				</div>
 
-				<div className="grid home-page__outro">
-					<div className="column column--light">Synergistically re-engineer global communities without multifunctional process improvements. Progressively fashion enabled quality vectors after customized intellectual capital. Authoritatively leverage existing focused niches rather than excellent.</div>
-					<div className="column column--light">Authoritatively underwhelm cross-unit synergy after cross-media infrastructures. Assertively disintermediate adaptive leadership vis-a-vis client-based e-business. Quickly unleash extensive "outside the box" thinking with standards compliant markets.</div>
+				<div className="grid grid--large">
+					<div className="column column--light"><p>Synergistically re-engineer global communities without multifunctional process improvements.</p></div>
+					<div className="column"><p>Authoritatively underwhelm cross-unit synergy after cross-media infrastructures. Assertively disintermediate adaptive leadership vis-a-vis client-based e-business. Quickly unleash extensive "outside the box" thinking with standards compliant markets.</p></div>
 				</div>
 			</section>
 		)
