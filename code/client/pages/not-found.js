@@ -6,14 +6,21 @@ export default class Not_found extends Component
 {
 	render()
 	{
+		const pic = require('../../../assets/images/404.jpg');
 		const markup =
 		(
 			<section className="l-content not-found-page">
 				{title("Page not found")}
 
 				<div className="grid">
-					<div className="column column-heavy">
-						<h1 className="heading">404 - Page not found</h1>
+					<div className="column">
+						<h1 className="heading">Where can it be?</h1>
+					</div>
+				</div>
+
+				<div className="grid">
+					<div className="column">
+						<img src={ pic } alt="Travolta is confused (Pulp Fiction)" />
 					</div>
 				</div>
 

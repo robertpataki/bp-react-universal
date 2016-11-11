@@ -12,9 +12,5 @@
 .l-content {
   position: relative;
   padding-top: 2rem;
-  @extend .wrapper-small;
-}
-
-.column {
-  background: rgba(255, 0, 0, 0.02);
+  @extend .wrapper;
 }
