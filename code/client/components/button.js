@@ -11,14 +11,14 @@ export default class Button extends Component
 
 	render()
 	{
-		const { busy, on_click, text } = this.props
+		const { busy, on_click, text, className } = this.props
 
 		const markup =
 		(
-			<div>
+			<span>
 				<span className="spinner"></span>
-				<button disabled={busy} onClick={on_click}>{text}</button>
-			</div>
+				<button disabled={busy} onClick={on_click} className={ className }>{text}</button>
+			</span>
 		)
 
 		return markup

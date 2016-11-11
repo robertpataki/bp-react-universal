@@ -72,18 +72,22 @@ export default class Page extends Component
 
 		const markup =
 		(
-			<section className="l-content">
+			<section className="l-content user-page">
 				{title("Simple REST API example")}
 
-				<div className="row">
-					<div className="small-centered small-11 medium-6 large-6">
-						<div>
-							<p>This is an example of REST API usage with no database persistence</p>
-
-							{this.render_users(error, loaded, users)}
-						</div>
+				<div className="grid">
+					<div className="column">
+						<h1 className="heading">Users - a simple REST API Example</h1>
 					</div>
 				</div>
+
+				<div className="grid">
+					<div className="column">
+						<p className="fw-bold">This is an example of REST API usage with no database persistence</p>
+					</div>
+				</div>
+
+				{this.render_users(error, loaded, users)}
 			</section>
 		)
 
@@ -101,7 +105,7 @@ export default class Page extends Component
 
 					{/* error.stack || error */}
 
-					<button onClick={this.refresh}>Try again</button>
+					<button onClick={this.refresh} className="btn">Try again</button>
 				</div>
 			)
 
@@ -117,12 +121,12 @@ export default class Page extends Component
 		{
 			const markup =
 			(
-				<div>
-					No users
-
-					<button onClick={this.add_user}>Add user</button>
-
-					<button onClick={this.refresh}>Refresh</button>
+				<div className="grid">
+					<div className="column">
+						<span className="fw-bold">No users</span>
+						<button onClick={this.add_user} className="btn btn--inline">Add user</button>
+						<button onClick={this.refresh} className="btn btn--inline">Refresh</button>
+					</div>
 				</div>
 			)
 
@@ -132,28 +136,31 @@ export default class Page extends Component
 		const markup =
 		(
 			<div>
-				<span>Users</span>
+				<div className="grid">
+					<div className="column">
+						<span className="fw-bold">Users</span>
+						<button onClick={this.add_user} className="btn btn--inline">Add user</button>
+						<button onClick={this.refresh} className="btn btn--inline">Refresh</button>
+					</div>
+				</div>
 
-				<button onClick={this.add_user}>Add user</button>
+				<div className="grid">
+					<div className="column">
+						<ol className="list">
+							{users.map(user =>
+							{
+								return <li key={user.id}>
+									<span className="fw-bold">{user.name}</span>
 
-				<button onClick={this.refresh}>Refresh</button>
-
-				<div>
-					<ul>
-						{users.map(user =>
-						{
-							return <li key={user.id}>
-								<span>{user.id}</span>
-
-								<span>{user.name}</span>
-
-								<Button
-									busy={this.props.deleting}
-									on_click={event => this.delete_user(user.id)}
-									text="delete user"/>
-							</li>
-						})}
-					</ul>
+									<Button
+										busy={this.props.deleting}
+										on_click={event => this.delete_user(user.id)}
+										text="× delete"
+										className="btn btn--inline btn--small btn--alert f-right" />
+								</li>
+							})}
+						</ol>
+					</div>
 				</div>
 			</div>
 		)
