@@ -23,7 +23,7 @@ class Header extends React.Component {
               <span className="menu__link menu__link--disabled">Don't click me</span>
             </li>
             <li className="menu__item">
-              <Link to="/404" className="menu__link menu__link--special">404 Page</Link>
+              <Link to="/404" className="menu__link menu__link--special" activeClassName="menu__link--active">404 Page</Link>
             </li>
           </ul>
         </nav>
