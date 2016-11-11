@@ -14,7 +14,7 @@ describe('Not Found Page', () => {
 
   it('has a page title', () => {
     const wrapper = shallow(<NotFoundPage />);
-    const expected = '404 - Page not found';
+    const expected = 'Where can it be?';
     const actual = wrapper.find('h1').text();
     expect(actual).toEqual(expected);
   });
