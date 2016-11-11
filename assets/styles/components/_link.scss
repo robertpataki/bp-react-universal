@@ -1,0 +1,17 @@
+/*
+ * Link
+ * ======================================================================== */
+
+.link {
+  @include link-hover-anim;
+
+  &:link,
+  &:active,
+  &:visited {
+    color: $col-link;
+  }
+
+  &:hover {
+    color: darken($col-link, 20%);
+  }
+}

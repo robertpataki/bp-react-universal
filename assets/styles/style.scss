@@ -15,6 +15,10 @@
 /*
  * Components
  * ======================================================================== */
+@import 'components/link';
+@import 'components/heading';
+
 @import 'components/header';
 @import 'components/menu';
+
 @import 'pages/home';
